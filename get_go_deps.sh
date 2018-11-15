@@ -11,3 +11,4 @@ dep ensure
 
 echo "Installing Protobuf to Golang compiler..."
 go get -u github.com/golang/protobuf/protoc-gen-go
+go get -u github.com/improbable-eng/grpc-web/go/grpcweb
