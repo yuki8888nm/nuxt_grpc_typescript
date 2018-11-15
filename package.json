@@ -1,0 +1,23 @@
+{
+  "name": "vuextypescript",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build:proto": "./protogen.sh",
+    "get_go_deps": "./get_go_deps.sh"
+  },
+  "dependencies": {
+    "grpc-web-client": "^0.7.0",
+    "nuxt-edge": "^2.0.0-25574262.f9bdac2",
+    "ts-loader": "^4.4.2",
+    "ts-protoc-gen": "^0.3.2",
+    "typescript": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}

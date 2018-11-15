@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package helloworld;
+
+message User {
+  message Info {
+    string description = 1; 
+    string birthday = 2; 
+  }
+  string name = 1;
+  repeated int32 follower_ids = 2;
+  Info info = 3;
+}
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}
+
+message GetUserRequest {
+  int32 id = 1;
+}
+
+message GetUserResponse {
+  User user = 1;
+}
